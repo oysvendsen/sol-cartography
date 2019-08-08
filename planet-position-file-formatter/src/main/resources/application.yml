@@ -1,0 +1,2 @@
+inputDir: job:planet-position-job-formatter/src/test/resources/
+outputDir: job:planet-position-job-formatter/target/out/
