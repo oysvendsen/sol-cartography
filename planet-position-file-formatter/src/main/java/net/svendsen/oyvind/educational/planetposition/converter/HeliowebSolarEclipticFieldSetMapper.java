@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.validation.BindException;
 
 @Component
-public class HeliowebFieldSetMapper implements FieldSetMapper<Helioweb> {
+public class HeliowebSolarEclipticFieldSetMapper implements FieldSetMapper<Helioweb> {
 
     @Override
     public Helioweb mapFieldSet(FieldSet fieldSet) throws BindException {
@@ -15,32 +15,29 @@ public class HeliowebFieldSetMapper implements FieldSetMapper<Helioweb> {
                 .year(getYear(fieldSet))
                 .dayOfYear(getDayOfYear(fieldSet))
                 .radiusAU(getRadius(fieldSet))
-                .e_latitude(getELatitude(fieldSet))
-                .e_longitude(getELongitude(fieldSet))
-                .hg_latitude(getHGLatitude(fieldSet))
-                .hg_longitude(getHGLongitude(fieldSet))
-                .hgi_longitude(getHGILongitude(fieldSet))
+                .e_latitude(getSELatitude(fieldSet))
+                .e_longitude(getSELongitude(fieldSet))
                 .build();
     }
 
     private long getYear(FieldSet fieldSet) {
-        return Long.parseLong(fieldSet.readString("YYYY").trim());
+        return Long.parseLong(fieldSet.readString("YEAR").trim());
     }
 
     private long getDayOfYear(FieldSet fieldSet) {
-        return Long.parseLong(fieldSet.readString("DOY").trim());
+        return Long.parseLong(fieldSet.readString("DAY").trim());
     }
 
     private double getRadius(FieldSet fieldSet) {
-        return Double.parseDouble(fieldSet.readString("AU").trim());
+        return Double.parseDouble(fieldSet.readString("RAD_AU").trim());
     }
 
-    private double getELatitude(FieldSet fieldSet) {
-        return Double.parseDouble(fieldSet.readString("ELAT").trim());
+    private double getSELatitude(FieldSet fieldSet) {
+        return Double.parseDouble(fieldSet.readString("SE_LAT").trim());
     }
 
-    private double getELongitude(FieldSet fieldSet) {
-        return Double.parseDouble(fieldSet.readString("ELON").trim());
+    private double getSELongitude(FieldSet fieldSet) {
+        return Double.parseDouble(fieldSet.readString("SE_LON").trim());
     }
 
     private double getHGLatitude(FieldSet fieldSet) {

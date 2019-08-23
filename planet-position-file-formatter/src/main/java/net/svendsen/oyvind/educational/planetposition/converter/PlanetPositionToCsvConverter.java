@@ -23,6 +23,7 @@ public class PlanetPositionToCsvConverter implements LineAggregator<PlanetPositi
 
     @Override
     public String aggregate(PlanetPositionXYZ item) {
-        return convert(item);
+        String convert = convert(item);
+        return convert;
     }
 }

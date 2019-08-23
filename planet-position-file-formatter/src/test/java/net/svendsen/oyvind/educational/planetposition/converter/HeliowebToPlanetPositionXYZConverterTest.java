@@ -1,7 +1,5 @@
 package net.svendsen.oyvind.educational.planetposition.converter;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
 import net.svendsen.oyvind.educational.planetposition.domain.Helioweb;
 import net.svendsen.oyvind.educational.planetposition.domain.PlanetPositionXYZ;
 import org.junit.jupiter.api.BeforeEach;

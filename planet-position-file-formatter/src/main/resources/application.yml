@@ -1,2 +1,7 @@
-inputDir: job:planet-position-job-formatter/src/test/resources/
-outputDir: job:planet-position-job-formatter/target/out/
+inputDir: "classpath:/files/in/"
+outputDir: "file:planet-position-file-formatter/target/out/"
+
+spring:
+  batch:
+    job:
+      enabled: false

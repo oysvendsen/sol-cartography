@@ -1,7 +1,6 @@
 package net.svendsen.oyvind.educational.planetposition.converter;
 
 import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
