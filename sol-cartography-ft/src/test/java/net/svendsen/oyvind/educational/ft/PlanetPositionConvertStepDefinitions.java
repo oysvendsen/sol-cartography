@@ -36,5 +36,9 @@ public class PlanetPositionConvertStepDefinitions implements En {
                     .isTrue();
         });
 
+        Given("profile is \"(.*)\"", (String profile) -> {
+            data.setProfile(profile);
+        });
+
     }
 }

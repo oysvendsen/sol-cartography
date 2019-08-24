@@ -1,8 +1,8 @@
 package net.svendsen.oyvind.educational.planetposition.job.processor;
 
 import net.svendsen.oyvind.educational.planetposition.converter.HeliowebToPlanetPositionXYZConverter;
-import net.svendsen.oyvind.educational.planetposition.domain.PlanetPositionXYZ;
 import net.svendsen.oyvind.educational.planetposition.domain.Helioweb;
+import net.svendsen.oyvind.educational.planetposition.domain.PlanetPositionXYZ;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.stereotype.Component;
 

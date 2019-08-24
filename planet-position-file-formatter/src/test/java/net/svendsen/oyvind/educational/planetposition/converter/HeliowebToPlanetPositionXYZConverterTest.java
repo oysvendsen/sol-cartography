@@ -16,11 +16,11 @@ class HeliowebToPlanetPositionXYZConverterTest {
     private static long DEFAULT_YEAR = 2000L;
     private static long DEFAULT_DAY = 200L;
 
-    private HeliowebToPlanetPositionXYZConverter heliowebConverter;
+    private SolarEclipticImplementation heliowebConverter;
 
     @BeforeEach
     void setUp() {
-        heliowebConverter = new HeliowebToPlanetPositionXYZConverter();
+        heliowebConverter = new SolarEclipticImplementation();
     }
 
     @ParameterizedTest

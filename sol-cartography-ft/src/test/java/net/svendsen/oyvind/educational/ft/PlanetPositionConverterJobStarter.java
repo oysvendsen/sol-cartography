@@ -11,6 +11,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class PlanetPositionConverterJobStarter {
 
     public void startJob(PlanetPositionConvertFTData data) {
+        System.setProperty("spring.profiles.include",data.getProfile());
         data.setOutputFilename(createOutputfilename(data.getInputFilename()));
         JobParameters jobParameters = new JobParametersBuilder()
                 .addString("inputFilename", data.getInputFilename())

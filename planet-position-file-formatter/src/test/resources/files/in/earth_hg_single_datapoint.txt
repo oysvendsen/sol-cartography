@@ -1,0 +1,2 @@
+YEAR DAY  RAD_AU  HG_LAT  HG_LON
+1994 258    1.01     7.2   333.0

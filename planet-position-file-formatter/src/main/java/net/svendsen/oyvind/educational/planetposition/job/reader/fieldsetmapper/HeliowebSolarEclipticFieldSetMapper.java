@@ -1,12 +1,14 @@
-package net.svendsen.oyvind.educational.planetposition.converter;
+package net.svendsen.oyvind.educational.planetposition.job.reader.fieldsetmapper;
 
 import net.svendsen.oyvind.educational.planetposition.domain.Helioweb;
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.FieldSet;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.BindException;
 
 @Component
+@Qualifier("SE")
 public class HeliowebSolarEclipticFieldSetMapper implements FieldSetMapper<Helioweb> {
 
     @Override

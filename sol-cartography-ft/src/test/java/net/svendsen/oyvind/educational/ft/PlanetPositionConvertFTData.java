@@ -9,4 +9,5 @@ public class PlanetPositionConvertFTData {
     private String inputFilename;
     private String outputFilename;
     private String batchStatus;
+    private String profile;
 }
