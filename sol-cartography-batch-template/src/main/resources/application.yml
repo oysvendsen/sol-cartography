@@ -1,0 +1,10 @@
+inputDir: "classpath:/files/in/"
+outputDir: "file:sol-cartography-batch/target/out/"
+
+
+spring:
+  batch:
+    job:
+      enabled: false
+debug: true
+trace: true

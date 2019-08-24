@@ -12,6 +12,7 @@
     <modules>
         <module>planet-position-file-formatter</module>
         <module>sol-cartography-ft</module>
+        <module>sol-cartography-batch-template</module>
     </modules>
 
     <properties>
