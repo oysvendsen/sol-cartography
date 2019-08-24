@@ -1,5 +1,3 @@
-package net;
-
 import net.svendsen.oyvind.educational.planetposition.PlanetPositionJobRunner;
 import org.springframework.boot.SpringApplication;
 

@@ -45,6 +45,17 @@
             <artifactId>junit-jupiter-params</artifactId>
             <version>${junit.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <version>2.1.7.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.11.1</version>
+        </dependency>
     </dependencies>
 
     <profiles>
@@ -57,7 +68,7 @@
                         <artifactId>spring-boot-maven-plugin</artifactId>
                         <!--<version>2.1.7.RELEASE</version>-->
                         <configuration>
-                            <mainClass>net.svendsen.oyvind.educational.planetposition.PlanetPositionJobRunner</mainClass>
+                            <mainClass>net.svendsen.oyvind.educational.net.svendsen.oyvind.educational.planetposition.PlanetPositionJobRunner</mainClass>
                             <layout>ZIP</layout>
                             <executable>true</executable>
                             <profiles>
